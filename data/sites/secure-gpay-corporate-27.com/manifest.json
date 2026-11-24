@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/": "index.html",
+    "/portal": "index.html"
+  },
+  "redirect_to": null,
+  "cloak": {
+    "rule": "none",
+    "decoy_file": null
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8",
+    "server": "nginx"
+  },
+  "tls": {
+    "issuer": "DigiCert Global Root G2",
+    "not_before": "2026-01-01T00:00:00Z",
+    "fingerprint": "SHA256:digicert_27"
+  }
+}

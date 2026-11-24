@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/": "index.html",
+    "/login": "index.html"
+  },
+  "redirect_to": null,
+  "cloak": {
+    "rule": "none",
+    "decoy_file": null
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8",
+    "server": "apache"
+  },
+  "tls": {
+    "issuer": "cPanel Authority",
+    "not_before": "2026-08-01T00:00:00Z",
+    "fingerprint": "SHA256:single_11"
+  }
+}

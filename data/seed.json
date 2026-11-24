@@ -1,0 +1,2210 @@
+[
+  {
+    "id": 1,
+    "url": "https://phonepe-security-update-node1.xyz/login/verify?ref=pay1",
+    "source": "sms",
+    "source_ref": "seed-batch-c1",
+    "raw_text": "Alert: Verify your PHONEPE account immediately at https://phonepe-security-update-node1.xyz/login/verify?ref=pay1 or pay refund.support1@ybl",
+    "first_seen": "2026-09-27T10:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "phonepe-security-update-node1.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support1@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_01_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876501100"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "phonepe",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 1
+    }
+  },
+  {
+    "id": 2,
+    "url": "https://phonepe-security-update-node2.xyz/login/verify?ref=pay2",
+    "source": "ct",
+    "source_ref": "seed-batch-c1",
+    "raw_text": "Alert: Verify your PHONEPE account immediately at https://phonepe-security-update-node2.xyz/login/verify?ref=pay2 or pay refund.support1@ybl",
+    "first_seen": "2026-09-29T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "phonepe-security-update-node2.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support1@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_01_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876501100"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "phonepe",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 1
+    }
+  },
+  {
+    "id": 3,
+    "url": "https://phonepe-security-update-node3.xyz/login/verify?ref=pay3",
+    "source": "sms",
+    "source_ref": "seed-batch-c1",
+    "raw_text": "Alert: Verify your PHONEPE account immediately at https://phonepe-security-update-node3.xyz/login/verify?ref=pay3 or pay refund.support1@ybl",
+    "first_seen": "2026-10-01T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "phonepe-security-update-node3.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support1@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_01_abcdef123456"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_1_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "phonepe",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 1
+    }
+  },
+  {
+    "id": 4,
+    "url": "https://phonepe-security-update-node4.xyz/login/verify?ref=pay4",
+    "source": "ct",
+    "source_ref": "seed-batch-c1",
+    "raw_text": "Alert: Verify your PHONEPE account immediately at https://phonepe-security-update-node4.xyz/login/verify?ref=pay4 or pay refund.support1@ybl",
+    "first_seen": "2026-10-03T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "phonepe-security-update-node4.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_1_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "phonepe",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 1
+    }
+  },
+  {
+    "id": 5,
+    "url": "https://paytm-security-update-node5.xyz/login/verify?ref=pay5",
+    "source": "sms",
+    "source_ref": "seed-batch-c2",
+    "raw_text": "Alert: Verify your PAYTM account immediately at https://paytm-security-update-node5.xyz/login/verify?ref=pay5 or pay refund.support2@ybl",
+    "first_seen": "2026-09-30T10:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "paytm-security-update-node5.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support2@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_02_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876502100"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "paytm",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 2
+    }
+  },
+  {
+    "id": 6,
+    "url": "https://paytm-security-update-node6.xyz/login/verify?ref=pay6",
+    "source": "ct",
+    "source_ref": "seed-batch-c2",
+    "raw_text": "Alert: Verify your PAYTM account immediately at https://paytm-security-update-node6.xyz/login/verify?ref=pay6 or pay refund.support2@ybl",
+    "first_seen": "2026-10-02T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "paytm-security-update-node6.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support2@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_02_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876502100"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "paytm",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 2
+    }
+  },
+  {
+    "id": 7,
+    "url": "https://paytm-security-update-node7.xyz/login/verify?ref=pay7",
+    "source": "sms",
+    "source_ref": "seed-batch-c2",
+    "raw_text": "Alert: Verify your PAYTM account immediately at https://paytm-security-update-node7.xyz/login/verify?ref=pay7 or pay refund.support2@ybl",
+    "first_seen": "2026-10-04T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "paytm-security-update-node7.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support2@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_02_abcdef123456"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_2_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "paytm",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 2
+    }
+  },
+  {
+    "id": 8,
+    "url": "https://paytm-security-update-node8.xyz/login/verify?ref=pay8",
+    "source": "ct",
+    "source_ref": "seed-batch-c2",
+    "raw_text": "Alert: Verify your PAYTM account immediately at https://paytm-security-update-node8.xyz/login/verify?ref=pay8 or pay refund.support2@ybl",
+    "first_seen": "2026-10-06T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "paytm-security-update-node8.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_2_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "paytm",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 2
+    }
+  },
+  {
+    "id": 9,
+    "url": "https://paytm-security-update-node9.xyz/login/verify?ref=pay9",
+    "source": "sms",
+    "source_ref": "seed-batch-c2",
+    "raw_text": "Alert: Verify your PAYTM account immediately at https://paytm-security-update-node9.xyz/login/verify?ref=pay9 or pay refund.support2@ybl",
+    "first_seen": "2026-09-24T18:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "paytm-security-update-node9.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "NameCheap, Inc."
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_2_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.94,
+      "label": "phish",
+      "brand": "paytm",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 2
+    }
+  },
+  {
+    "id": 10,
+    "url": "https://gpay-security-update-node10.xyz/login/verify?ref=pay10",
+    "source": "sms",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node10.xyz/login/verify?ref=pay10 or pay refund.support3@ybl",
+    "first_seen": "2026-10-03T10:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node10.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support3@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_03_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876503100"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 11,
+    "url": "https://gpay-security-update-node11.xyz/login/verify?ref=pay11",
+    "source": "ct",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node11.xyz/login/verify?ref=pay11 or pay refund.support3@ybl",
+    "first_seen": "2026-10-05T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node11.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support3@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_03_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876503100"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 12,
+    "url": "https://gpay-security-update-node12.xyz/login/verify?ref=pay12",
+    "source": "sms",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node12.xyz/login/verify?ref=pay12 or pay refund.support3@ybl",
+    "first_seen": "2026-10-07T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node12.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support3@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_03_abcdef123456"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 13,
+    "url": "https://gpay-security-update-node13.xyz/login/verify?ref=pay13",
+    "source": "ct",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node13.xyz/login/verify?ref=pay13 or pay refund.support3@ybl",
+    "first_seen": "2026-09-25T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node13.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support3@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_03_abcdef123456"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_3_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 14,
+    "url": "https://gpay-security-update-node14.xyz/login/verify?ref=pay14",
+    "source": "sms",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node14.xyz/login/verify?ref=pay14 or pay refund.support3@ybl",
+    "first_seen": "2026-09-27T18:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node14.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_3_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.94,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 15,
+    "url": "https://gpay-security-update-node15.xyz/login/verify?ref=pay15",
+    "source": "ct",
+    "source_ref": "seed-batch-c3",
+    "raw_text": "Alert: Verify your GPAY account immediately at https://gpay-security-update-node15.xyz/login/verify?ref=pay15 or pay refund.support3@ybl",
+    "first_seen": "2026-09-29T20:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "gpay-security-update-node15.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-3, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_3_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "gpay",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 3
+    }
+  },
+  {
+    "id": 16,
+    "url": "https://bhim-security-update-node16.xyz/login/verify?ref=pay16",
+    "source": "sms",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node16.xyz/login/verify?ref=pay16 or pay refund.support4@ybl",
+    "first_seen": "2026-10-06T10:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node16.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support4@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_04_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876504100"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 17,
+    "url": "https://bhim-security-update-node17.xyz/login/verify?ref=pay17",
+    "source": "ct",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node17.xyz/login/verify?ref=pay17 or pay refund.support4@ybl",
+    "first_seen": "2026-09-24T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node17.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support4@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_04_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876504100"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 18,
+    "url": "https://bhim-security-update-node18.xyz/login/verify?ref=pay18",
+    "source": "sms",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node18.xyz/login/verify?ref=pay18 or pay refund.support4@ybl",
+    "first_seen": "2026-09-26T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node18.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support4@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_04_abcdef123456"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 19,
+    "url": "https://bhim-security-update-node19.xyz/login/verify?ref=pay19",
+    "source": "ct",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node19.xyz/login/verify?ref=pay19 or pay refund.support4@ybl",
+    "first_seen": "2026-09-28T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node19.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support4@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_04_abcdef123456"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_4_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 20,
+    "url": "https://bhim-security-update-node20.xyz/login/verify?ref=pay20",
+    "source": "sms",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node20.xyz/login/verify?ref=pay20 or pay refund.support4@ybl",
+    "first_seen": "2026-09-30T18:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node20.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_4_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.94,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 21,
+    "url": "https://bhim-security-update-node21.xyz/login/verify?ref=pay21",
+    "source": "ct",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node21.xyz/login/verify?ref=pay21 or pay refund.support4@ybl",
+    "first_seen": "2026-10-02T20:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node21.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_4_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 22,
+    "url": "https://bhim-security-update-node22.xyz/login/verify?ref=pay22",
+    "source": "sms",
+    "source_ref": "seed-batch-c4",
+    "raw_text": "Alert: Verify your BHIM account immediately at https://bhim-security-update-node22.xyz/login/verify?ref=pay22 or pay refund.support4@ybl",
+    "first_seen": "2026-10-04T22:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "bhim-security-update-node22.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-4, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_4_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "bhim",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 4
+    }
+  },
+  {
+    "id": 23,
+    "url": "https://sbi-security-update-node23.xyz/login/verify?ref=pay23",
+    "source": "sms",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node23.xyz/login/verify?ref=pay23 or pay refund.support5@ybl",
+    "first_seen": "2026-09-25T10:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node23.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support5@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_05_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876505100"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 24,
+    "url": "https://sbi-security-update-node24.xyz/login/verify?ref=pay24",
+    "source": "ct",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node24.xyz/login/verify?ref=pay24 or pay refund.support5@ybl",
+    "first_seen": "2026-09-27T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node24.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support5@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_05_abcdef123456"
+      },
+      {
+        "type": "phone",
+        "value": "+919876505100"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 25,
+    "url": "https://sbi-security-update-node25.xyz/login/verify?ref=pay25",
+    "source": "sms",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node25.xyz/login/verify?ref=pay25 or pay refund.support5@ybl",
+    "first_seen": "2026-09-29T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node25.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support5@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_05_abcdef123456"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 26,
+    "url": "https://sbi-security-update-node26.xyz/login/verify?ref=pay26",
+    "source": "ct",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node26.xyz/login/verify?ref=pay26 or pay refund.support5@ybl",
+    "first_seen": "2026-10-01T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node26.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support5@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_05_abcdef123456"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 27,
+    "url": "https://sbi-security-update-node27.xyz/login/verify?ref=pay27",
+    "source": "sms",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node27.xyz/login/verify?ref=pay27 or pay refund.support5@ybl",
+    "first_seen": "2026-10-03T18:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node27.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "vpa",
+        "value": "refund.support5@ybl"
+      },
+      {
+        "type": "kit_hash",
+        "value": "kithash_05_abcdef123456"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_5_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.94,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 28,
+    "url": "https://sbi-security-update-node28.xyz/login/verify?ref=pay28",
+    "source": "ct",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node28.xyz/login/verify?ref=pay28 or pay refund.support5@ybl",
+    "first_seen": "2026-10-05T20:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node28.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_5_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.82,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 29,
+    "url": "https://sbi-security-update-node29.xyz/login/verify?ref=pay29",
+    "source": "sms",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node29.xyz/login/verify?ref=pay29 or pay refund.support5@ybl",
+    "first_seen": "2026-10-07T22:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node29.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_5_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.85,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 30,
+    "url": "https://sbi-security-update-node30.xyz/login/verify?ref=pay30",
+    "source": "ct",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node30.xyz/login/verify?ref=pay30 or pay refund.support5@ybl",
+    "first_seen": "2026-09-26T00:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node30.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_5_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.88,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 31,
+    "url": "https://sbi-security-update-node31.xyz/login/verify?ref=pay31",
+    "source": "sms",
+    "source_ref": "seed-batch-c5",
+    "raw_text": "Alert: Verify your SBI account immediately at https://sbi-security-update-node31.xyz/login/verify?ref=pay31 or pay refund.support5@ybl",
+    "first_seen": "2026-09-28T02:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "sbi-security-update-node31.xyz"
+      },
+      {
+        "type": "ip",
+        "value": "104.21.55.2"
+      },
+      {
+        "type": "asn",
+        "value": "AS13335"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.cloudflare-decoy.com"
+      },
+      {
+        "type": "registrar",
+        "value": "Registrar-Camp-5, LLC"
+      },
+      {
+        "type": "tg_bot",
+        "value": "bot_helpdesk_5_bot"
+      }
+    ],
+    "verdict": {
+      "score": 0.91,
+      "label": "phish",
+      "brand": "sbi",
+      "signals": {
+        "brand_keyword": 0.45,
+        "vpa_pattern": 0.4,
+        "heuristic": 0.1
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "phish",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 5
+    }
+  },
+  {
+    "id": 32,
+    "url": "https://benign-service-1.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-1.org/info. No phishing here.",
+    "first_seen": "2026-09-26T11:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-1.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.11"
+      },
+      {
+        "type": "asn",
+        "value": "AS20001"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-1.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-1 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 33,
+    "url": "https://benign-service-2.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-2.org/info. No phishing here.",
+    "first_seen": "2026-09-28T12:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-2.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.12"
+      },
+      {
+        "type": "asn",
+        "value": "AS20002"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-2.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-2 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 34,
+    "url": "https://benign-service-3.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-3.org/info. No phishing here.",
+    "first_seen": "2026-09-30T13:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-3.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.13"
+      },
+      {
+        "type": "asn",
+        "value": "AS20003"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-3.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-3 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 35,
+    "url": "https://benign-service-4.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-4.org/info. No phishing here.",
+    "first_seen": "2026-10-02T14:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-4.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.14"
+      },
+      {
+        "type": "asn",
+        "value": "AS20004"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-4.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-4 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 36,
+    "url": "https://benign-service-5.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-5.org/info. No phishing here.",
+    "first_seen": "2026-10-04T15:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-5.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.15"
+      },
+      {
+        "type": "asn",
+        "value": "AS20005"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-5.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-5 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 37,
+    "url": "https://benign-service-6.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-6.org/info. No phishing here.",
+    "first_seen": "2026-10-06T16:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-6.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.16"
+      },
+      {
+        "type": "asn",
+        "value": "AS20006"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-6.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-6 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 38,
+    "url": "https://benign-service-7.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-7.org/info. No phishing here.",
+    "first_seen": "2026-09-24T17:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-7.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.17"
+      },
+      {
+        "type": "asn",
+        "value": "AS20007"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-7.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-7 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 39,
+    "url": "https://benign-service-8.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-8.org/info. No phishing here.",
+    "first_seen": "2026-09-26T18:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-8.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.18"
+      },
+      {
+        "type": "asn",
+        "value": "AS20008"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-8.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-8 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 40,
+    "url": "https://benign-service-9.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-9.org/info. No phishing here.",
+    "first_seen": "2026-09-28T19:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-9.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.19"
+      },
+      {
+        "type": "asn",
+        "value": "AS20009"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-9.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-9 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "train",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  },
+  {
+    "id": 41,
+    "url": "https://benign-service-10.org/info",
+    "source": "feed",
+    "source_ref": "benign-feed",
+    "raw_text": "Welcome to benign information portal https://benign-service-10.org/info. No phishing here.",
+    "first_seen": "2026-09-30T20:00:00+00:00",
+    "is_synthetic": 1,
+    "indicators": [
+      {
+        "type": "domain",
+        "value": "benign-service-10.org"
+      },
+      {
+        "type": "ip",
+        "value": "192.0.2.20"
+      },
+      {
+        "type": "asn",
+        "value": "AS20010"
+      },
+      {
+        "type": "nameserver",
+        "value": "ns1.benigndns-10.org"
+      },
+      {
+        "type": "registrar",
+        "value": "BenignRegistrar-10 LLC"
+      }
+    ],
+    "verdict": {
+      "score": 0.05,
+      "label": "benign",
+      "brand": null,
+      "signals": {
+        "benign_heuristics": 0.95
+      },
+      "model_version": "v0-seed"
+    },
+    "labels": {
+      "label": "benign",
+      "split": "test",
+      "heldout_brand": 0,
+      "campaign_gt": 0
+    }
+  }
+]

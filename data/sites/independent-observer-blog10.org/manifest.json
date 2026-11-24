@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/": "index.html",
+    "/article": "index.html"
+  },
+  "redirect_to": null,
+  "cloak": {
+    "rule": "none",
+    "decoy_file": null
+  },
+  "response_headers": {
+    "content-type": "text/html; charset=utf-8",
+    "server": "apache"
+  },
+  "tls": {
+    "issuer": "GlobalSign Root CA",
+    "not_before": "2026-02-01T00:00:00Z",
+    "fingerprint": "SHA256:globalsign_10"
+  }
+}

